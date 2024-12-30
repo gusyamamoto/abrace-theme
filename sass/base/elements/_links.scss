@@ -1,0 +1,23 @@
+a {
+	color: $color_white;
+	text-decoration: none;
+
+	&:visited {
+		// color: $color_black;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color_black;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

@@ -1,0 +1,52 @@
+#parceiros {
+    background-color: $color_white;
+    margin-top: 4rem;
+    border-radius: 70px;
+    height: 18rem;
+    position: relative;
+    h2 {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+    .orc-button {
+        @include orcamento-btn;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: -17px;
+    }
+
+    .logo-parceiros-carousel-wrapper {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+
+    .logo-parceiros-carousel {
+        display: flex;
+        gap: 8rem;
+        align-items: center;
+        animation: scroll-carousel 15s linear infinite;
+        will-change: transform;
+    }
+
+    .carousel-item {
+        flex-shrink: 0;
+        width: 150px;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    @keyframes scroll-carousel {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+}

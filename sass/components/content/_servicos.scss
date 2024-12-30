@@ -1,0 +1,51 @@
+#servicos {
+    background-color: $color_white;
+    border-radius: 0 150px 0 150px;
+    max-width: 80%;
+    margin: auto;
+    height: 30rem;
+    h2 {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+}
+
+.servicos-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    color: $color_white;
+
+    article {
+        background-color: $color_blue;
+        border-radius: 0 50px 0 50px;
+        width: 19rem;
+        padding: 0rem 2rem 1rem;
+        position: relative;
+    }
+
+    .yellow-dots {
+        display: grid;
+        grid-template-columns: repeat(3, 6px);
+        gap: 4px;
+        position: absolute;
+    }
+
+    .yellow-dots span {
+        width: 6px;
+        height: 6px;
+        background-color: $color_yellow;
+        border-radius: 50%;
+    }
+
+    .invisible {
+        visibility: hidden;
+    }
+
+    .top-right {
+        top: 20px;
+        right: 30px;
+    }
+}

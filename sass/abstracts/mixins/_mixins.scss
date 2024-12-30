@@ -1,0 +1,63 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns );
+}
+
+// Button Orcamento
+@mixin orcamento-btn {
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  margin-bottom: -1rem;
+
+  a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;  // Center the content horizontally
+      color: $color_black;
+      font-weight: 800;
+      background-color: $color_white;
+      border: 3px solid $color_yellow;
+      padding: 0 1.3rem;
+      border-radius: 10px 50px 10px 50px;
+      text-decoration: none;
+      position: relative;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: box-shadow 0.15s, transform 0.15s;
+
+      // Button shadow and effects
+      box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+
+      &:hover {
+          box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+          transform: translateY(-2px);
+          background-color: $color_yellow;
+          // border: 3px solid $color_black;
+      }
+
+      &:active {
+          box-shadow: #D6D6E7 0 3px 7px inset;
+          transform: translateY(2px);  // Button presses down on click
+          color: $color_white;
+          background-color: $color_blue;
+          border: 3px solid $color_black;
+
+      }
+
+      &:focus {
+          box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      }
+
+      .logo-btn {
+          width: 4rem;  // Adjust image size
+          margin-right: 0.8rem;  // Space between image and text
+      }
+  }
+}

@@ -1,0 +1,54 @@
+footer {
+    .footer-main {
+        display: grid;
+        column-gap: 5rem;
+    }
+
+    .footer-left {
+        text-align: right;
+        display: flex;
+        align-items: center;
+        width: 50%;
+    }
+
+    .footer-right {
+        color: $color_white;
+        width: 50%;
+    }
+
+    .logo-footer {
+        width: 6.25rem;
+    }
+
+    .social-logos {
+        display: flex;
+
+        svg {
+            fill: $color_white;
+            width: 3.125rem;
+            height: 3.125rem;
+        }
+    }
+
+    .site-info {
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color_white;
+        padding: 0 3rem;
+
+        a {
+            color: $color_white;
+        }
+
+        a:hover {
+            color: $color_black;
+        }
+    }
+
+    .site-info>*:not(:last-child) {
+        margin-right: auto;
+    }
+
+}
