@@ -1,7 +1,7 @@
 const textElement = document.getElementById("typing-text");
 const textArray = [
   "Qualidade é um diferencial.",
-  "Qualidade é uma necessidade!"
+  "Qualidade é uma necessidade."
 ];
 let arrayIndex = 0;
 let charIndex = 0;

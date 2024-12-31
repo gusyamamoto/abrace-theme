@@ -1,11 +1,11 @@
 #parceiros {
     background-color: $color_white;
     margin-top: 4rem;
-    border-radius: 0 75px 0 75px;
-    height: 18rem;
+    // border-radius: 0 75px 0 75px;
+    height: 16rem;
     position: relative;
     @include shadow;
-    @include border;
+    // @include border;
     h2 {
         font-size: 2rem;
         padding-top: 1.5rem;

@@ -35,7 +35,7 @@ get_header();
 
 			</div>
 			<?php get_template_part('template-parts/content', 'button-orc') ?>
-
+			<img class="logo-abrace" src="<?php echo get_template_directory_uri(); ?>./assets/logo_abrace.png" alt="Logo Abrace">
 
 		</section>
 
