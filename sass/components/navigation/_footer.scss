@@ -1,40 +1,66 @@
 footer {
     .footer-main {
-        display: grid;
-        column-gap: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .footer-left {
         text-align: right;
         display: flex;
         align-items: center;
-        width: 50%;
+        justify-content: space-between;
+        width: 30rem;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+        }
+
+        h3 {
+            color: $color_white;
+        }
     }
 
     .footer-right {
         color: $color_white;
-        width: 50%;
+        width: 30rem;
     }
 
     .logo-footer {
-        width: 6.25rem;
+        width: 7rem;
     }
 
     .social-logos {
         display: flex;
+        align-items: center;
+        gap: 1rem;
 
         svg {
             fill: $color_white;
-            width: 3.125rem;
-            height: 3.125rem;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        .insta-logo {
+            width: 2.6rem;
+            height: 2.6rem;
         }
     }
 
+    .social-link:hover svg {
+        fill: $color_black;
+    }
+    
+
     .site-info {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        background: linear-gradient(to right, $color_black 50%, $color_blue 50%);
         color: $color_white;
         padding: 0 3rem;
 
@@ -43,7 +69,7 @@ footer {
         }
 
         a:hover {
-            color: $color_black;
+            color: $color_blue;
         }
     }
 

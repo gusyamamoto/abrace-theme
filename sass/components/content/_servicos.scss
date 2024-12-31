@@ -4,6 +4,8 @@
     max-width: 80%;
     margin: auto;
     height: 30rem;
+    @include shadow;
+    @include border;
     h2 {
         font-size: 2rem;
         padding-top: 1.5rem;
@@ -24,6 +26,7 @@
         width: 19rem;
         padding: 0rem 2rem 1rem;
         position: relative;
+        @include shadow;
     }
 
     .yellow-dots {

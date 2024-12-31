@@ -22,8 +22,9 @@
       justify-content: center;  // Center the content horizontally
       color: $color_black;
       font-weight: 800;
-      background-color: $color_white;
-      border: 3px solid $color_yellow;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,1) 44%, rgba(5,173,255,1) 100%);
+      border: 1px solid $color_black;
       padding: 0 1.3rem;
       border-radius: 10px 50px 10px 50px;
       text-decoration: none;
@@ -45,8 +46,8 @@
       &:active {
           box-shadow: #D6D6E7 0 3px 7px inset;
           transform: translateY(2px);  // Button presses down on click
-          color: $color_white;
-          background-color: $color_blue;
+          color: $color_yellow;
+          background-color: $color_yellow;
           border: 3px solid $color_black;
 
       }
@@ -60,4 +61,77 @@
           margin-right: 0.8rem;  // Space between image and text
       }
   }
+}
+
+// Shadow for sections
+
+@mixin shadow {
+    box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+@mixin border {
+    border: 1px solid $color_black;
+}
+
+
+@mixin background-pattern {
+    .isometric {
+        background-color: #fefefe;
+        background-image: linear-gradient(
+            30deg,
+            #5394fd 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #5394fd 87.5%,
+            #5394fd
+          ),
+          linear-gradient(
+            150deg,
+            #5394fd 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #5394fd 87.5%,
+            #5394fd
+          ),
+          linear-gradient(
+            30deg,
+            #5394fd 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #5394fd 87.5%,
+            #5394fd
+          ),
+          linear-gradient(
+            150deg,
+            #5394fd 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #5394fd 87.5%,
+            #5394fd
+          ),
+          linear-gradient(
+            60deg,
+            #5394fd77 25%,
+            transparent 25.5%,
+            transparent 75%,
+            #5394fd77 75%,
+            #5394fd77
+          ),
+          linear-gradient(
+            60deg,
+            #5394fd77 25%,
+            transparent 25.5%,
+            transparent 75%,
+            #5394fd77 75%,
+            #5394fd77
+          );
+        background-size: 48px 84px;
+        background-position:
+          0 0,
+          0 0,
+          24px 42px,
+          24px 42px,
+          0 0,
+          24px 42px;
+      }
 }

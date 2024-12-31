@@ -17,12 +17,27 @@
 		<div class="footer-left">
 			<div class="footer-logos-left">
 				<img class="logo-footer" src="<?php echo get_template_directory_uri(); ?>./assets/abrace-logo-white.png" alt="Logo Abrace">
-				<div class="social-logos">
-					<?php echo file_get_contents(get_template_directory() . '/assets/facebook-logo.svg'); ?>
-					<?php echo file_get_contents(get_template_directory() . '/assets/instagram-logo.svg'); ?>
+				<div class="social-logos">					
+					<a class="social-link" href="https://www.facebook.com/AbraceOCP/" target="_blank">
+						<?php echo file_get_contents(get_template_directory() . '/assets/facebook-logo.svg'); ?>
+					</a>
+
+					<?php
+					// Get the SVG file content for Instagram
+					$svg_content = file_get_contents(get_template_directory() . '/assets/instagram-logo.svg');
+
+					// Add the class "insta-logo" to the <svg> tag
+					if ($svg_content) {
+						$svg_content = preg_replace('/<svg\b/', '<svg class="insta-logo"', $svg_content);
+						// Wrap the Instagram logo in <a> tag
+						echo '<a class="social-link" href="https://www.instagram.com/abrace_certificadora/" target="_blank">' . $svg_content . '</a>';
+					}
+					?>
 				</div>
+
 			</div>
 			<nav class="nav-footer">
+				<h3>Menu</h3>
 				<?php
 				wp_nav_menu(
 					array(
@@ -35,8 +50,8 @@
 		</div>
 
 		<div class="footer-right">
-			<h3>ABRACE</h3>
-			<h4>Avaliações Brasil Da Conformidade e Ensaio LTDA</h4>
+			<h3>ABRACE<br>
+			Avaliações Brasil Da Conformidade e Ensaio LTDA</h3>
 			Avenida Jabaquara, 2049 - 9º Andar<br>
 			Saúde - 04045-003 - São Paulo - SP<br>
 			+55 11 5575 6987<br>

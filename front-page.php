@@ -28,10 +28,14 @@ get_header();
 		<section id="hero">
 			<div class="hero-container">
 				<?php get_template_part('template-parts/content', 'bluedots') ?>
-				<h1><span class="word-blue">Qualidade</span> é mais do que<br>um diferencial.</br>É uma <span class="word-blue">necessidade<span>.</h1>
+
+				<div class="typing-container">
+					<span id="typing-text"></span>
+				</div>
+
 			</div>
 			<?php get_template_part('template-parts/content', 'button-orc') ?>
-			
+
 
 		</section>
 

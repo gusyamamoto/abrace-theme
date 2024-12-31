@@ -150,6 +150,14 @@ function abrace_theme_scripts() {
 
 	wp_enqueue_script( 'abrace-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+	wp_enqueue_script(
+        'typing-animation', // Handle
+        get_template_directory_uri() . '/js/typing-animation.js', // Path to your JS file
+        array(), // Dependencies (none in this case)
+        '1.0', // Version
+        array( 'strategy' => 'defer' )
+    );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
