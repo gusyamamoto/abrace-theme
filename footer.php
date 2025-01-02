@@ -52,7 +52,7 @@
 		<div class="footer-right">
 			<h3>ABRACE<br>
 			Avaliações Brasil Da Conformidade e Ensaio LTDA</h3>
-			Avenida Jabaquara, 2049 - 9º Andar<br>
+			<p>Avenida Jabaquara, 2049 - 9º Andar<br>
 			Saúde - 04045-003 - São Paulo - SP<br>
 			+55 11 5575 6987<br>
 			abrace@abracesp.org.br<br>

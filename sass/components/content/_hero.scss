@@ -9,7 +9,8 @@
     margin-bottom: 8rem;
     position: relative;
     @include shadow;
-    @include border;
+    // @include border;
+
     h1 {
         margin: 0;
         text-align: left;

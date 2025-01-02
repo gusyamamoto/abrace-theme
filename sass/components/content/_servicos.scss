@@ -5,10 +5,12 @@
     margin: auto;
     height: 30rem;
     @include shadow;
-    @include border;
+    padding-top: 0.2rem;
+    // @include border;
     h2 {
         font-size: 2rem;
         text-align: center;
+        font-family: $font_h2title;
     }
 }
 
@@ -25,12 +27,13 @@
         width: 19rem;
         padding: 0rem 2rem 1rem;
         position: relative;
-        @include shadow;
-    }
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.856);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
 
-    .link-servicos:hover {
-        color: $color_black;
-
+        &:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-6px) translateX(3px);
+        }
     }
 
     .yellow-dots {

@@ -67,8 +67,14 @@
 // Shadow for sections
 
 @mixin shadow {
+    box-shadow: inset 2px 2px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+@mixin outer-shadow {
     box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.3);
 }
+
+
 
 @mixin border {
     border: 1px solid $color_black;

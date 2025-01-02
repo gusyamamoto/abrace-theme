@@ -4,12 +4,13 @@
     // border-radius: 0 75px 0 75px;
     height: 16rem;
     position: relative;
-    @include shadow;
+    @include outer-shadow;
     // @include border;
     h2 {
         font-size: 2rem;
         padding-top: 1.5rem;
         text-align: center;
+        font-family: $font_h2title;
     }
     .orc-button {
         @include orcamento-btn;
